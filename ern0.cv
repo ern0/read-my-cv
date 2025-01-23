@@ -160,9 +160,9 @@ Source code and documentation with examples: https://github.com/ern0/kolorwheel.
 Senior Embedded and Systems Developer
 Intep Kft
 
-Outdoor LED wall firmware, font, autokerning renderer #embedded
-Payment kiosk firmware (backend) and GUI [JavaScript] #web
-Modular datasheet creator system [PHP] [HTML] [CSS] [PDF] #web
+Outdoor LED wall firmware, font, autokerning renderer [C] #embedded
+Payment kiosk firmware [C++] and GUI [JavaScript] #embedded #web
+Modular datasheet creator system [PHP] [HTML] [CSS] [PDF] #embedded #web
 
 ---- experience ----
 2006−2011

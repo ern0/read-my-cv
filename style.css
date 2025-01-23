@@ -235,3 +235,18 @@ body {
 	padding: 0 6pt 0 6pt;
 	margin-right: -0.2pt;
 }
+
+.intermission {
+	background: #ffffff;
+	text-align: center;
+	padding: 14pt 0 8pt 0;
+}
+
+.imlink,
+.imlink:hover,
+.imlink:active,
+.imlink:visited {
+	font-style: italic;
+	color: #666666;
+	text-decoration: underline;
+}

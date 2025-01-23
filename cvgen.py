@@ -4,7 +4,7 @@ import sys
 
 class Render:
 
-    VERSION = "2025a"
+    VERSION = "2025b"
 
     def __init__(self):
         self.level = 0
@@ -105,10 +105,11 @@ class Render:
         attr_list = [ ("class", class_value,) ]
         self.open(node_type, attr_list, no_eol=no_eol)
 
-    def link(self, url):
+    def link(self, url, text=None, cls=None):
 
         url = url.replace("@", "+" + self.VERSION + "@")
-        text = url
+        if text is None:
+            text = url
         attrs = []
 
         if "@" in url:
@@ -121,6 +122,8 @@ class Render:
                 text = url
 
         attrs.append( ("href", url,) )
+        if cls is not None:
+            attrs.append( ("class", cls,) )
 
         self.open("a", attrs)
         self.text(text, urls_to_link=False)
@@ -235,8 +238,12 @@ class Gen:
         self.close_exp_header_if_needed()
         self.close_edu_header_if_needed()
 
-        for i in range(4):
-            self.render.close_last()
+        self.render.close_last()
+        self.render_intermission()
+        self.render.close_last()
+        self.render.close_last()
+        self.render.close_last()
+
 
     def proc_header(self):
 
@@ -263,6 +270,18 @@ class Gen:
 
         self.is_first_line = True
         self.exp_features = {}
+
+    def render_intermission(self):
+
+        self.render.open("div", [("class", "intermission",)])
+        self.render.link(
+            "https://kloud.5eb1f6b2.nip.io/cv/cv.html",
+            "Found holes? Check the full version!",
+            "imlink"
+        )
+        self.render.close_last()
+        self.render.eol()
+
 
     def render_title(self):
 
