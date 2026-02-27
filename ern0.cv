@@ -51,14 +51,23 @@ Not only creates clean, modular,
 maintainable code, but inspires and helps others to do the same,
 educates and supports young talents.
 
-Enjoyed programming since teenager age and still does. Last
-achievement: learned Rust basics,
-created and published first crate,
-working on a larger multi-client system.
+Enjoyed programming since teenager age and still does.
+Last achievement: learned Rust, created two open-source crates,
+working as Rust developer.
+
+---- experience #rust ----
+2025-
+Rust Developer
+Navcenter Kft, contractor
+
+Work on indoor positioning system:
+* Reimplement core modules [Rust]
+* Create integration tests [Bash] [Python]
+* Create missing documentation [md]
 
 ---- experience ----
 2023-2024
-Test engineer
+Test Engineer
 YottaDB LLC, contractor
 
 Work on open-source database platform:

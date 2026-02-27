@@ -275,13 +275,18 @@ class Gen:
 
         self.render.open("div", [("class", "intermission",)])
         self.render.link(
-            "https://kloud.5eb1f6b2.nip.io/cv/cv.html",
-            "Found holes? Check the full version!",
+            "http://80.211.196.65//cv/cv.html",
+            "Full version",
+            "imlink"
+        )
+        self.render.text(" - ")
+        self.render.link(
+            "https://linkbroker.hu/stuff/cv/portfolio.html",
+            "Portfolio (under construction)",
             "imlink"
         )
         self.render.close_last()
         self.render.eol()
-
 
     def render_title(self):
 
